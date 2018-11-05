@@ -1,0 +1,41 @@
+@import './../../scss/colors';
+.item{
+  float:left;
+  width: 30%;
+  padding-bottom: 30%;
+  margin:1.66%;
+  height:0px;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+  .content{
+    position: absolute;
+    left: 43.5%;
+    font-size: 50px;
+    top: 36%;
+    color: $secondary;
+  }
+  &:active{
+    box-shadow: 5px 6px $gray;
+  }
+  &:before{
+    content: ' ';
+    background: url('./../../svg/background.svg');
+    opacity: 0.04;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }  
+  &.type-a{
+  background-color: $red;
+  }
+  &.type-b{
+    background-color: $blue;
+  }
+  &.type-c{
+    background-color: $orange;
+  }
+  &.type-d{
+    background-color: $green;
+  }  
+}

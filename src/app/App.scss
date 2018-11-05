@@ -1,0 +1,52 @@
+@import './../scss/colors';
+
+.app {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+
+  .main {
+    background: $secondary;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;  
+    flex-direction: column;
+    height: 100vh;
+    width: 66vw;
+  
+    .app-header {
+      padding-left: 40px; 
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 120px;
+      border-bottom: $primary 3px solid;
+      border-radius: 0 0 0 20px;
+      h1{
+        color: $primary;
+        font-size: 50px;
+        font-weight: 100;
+      }
+    }
+  
+    .items-container{
+      height:calc(100vh - 120px);
+      overflow-y: auto;
+    }
+  }
+}
+
+
+
+
