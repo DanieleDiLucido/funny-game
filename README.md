@@ -1,6 +1,7 @@
 # funny-game
 
 **Demo:** [netlify](https://reverent-feynman-05e4a9.netlify.com/)
+
 Implement the code for a simple browser based game points system that calculates the total
 points awarded to a player for a number of items they have collected in a game.
 We'll use individual letters of the alphabet to identify the items (A, B, C, and so on). Our items
